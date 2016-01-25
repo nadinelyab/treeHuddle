@@ -14,6 +14,11 @@
  *= require_self
  */
 
+.col-centered{
+    float: none;
+    margin: 0 auto;
+}
+
 #name {
 	font-family: 'Quicksand', sans-serif;
 	font-weight: 700;
@@ -22,7 +27,10 @@
 	padding-bottom: 0px;
 	margin-bottom: 0px;
 	color: white;
+	font-size: 60px;
 }
+
+
 
 #slogan {
 	font-family: 'Quicksand', sans-serif;
@@ -38,10 +46,29 @@
 	padding: 10px;
 }
 
+#text-box{
+	background-color: #3498DC;
+	border: none;
+	border-bottom: solid white;
+	width: 300px;
+	margin-top: 10px;
+}
+
 .button {
-	border-radius: 5px;
+	border-radius: 10px;
 	background-color: #e74c3c;
-	padding: 20px;
+	padding: 15px;
+	margin-top: 20px;
+	transition: all 0.5s ease 0s;
+	border: none;
+	font-size: 25px;
+	font-family: 'Quicksand', sans-serif;
+	font-weight: 300;
+	color: white;
+}
+
+.button:hover {
+  background: #004080;
 }
 
 body{

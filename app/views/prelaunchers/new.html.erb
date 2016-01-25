@@ -1,25 +1,26 @@
 <div class="container">
 	<div class="row">
-		<div class="col-lg-12 center">
+		<div class="col-md-8 col-md-offset-3">
 			<h1 id="name">
 				treeHuddle
 			</h1>
 		</div>
 	</div>
 	<div class="row">
-		<div class="col-lg-12 center">
+		<div class="col-md-8 col-md-offset-3">
 			<h1 id="slogan">
 				Study groups on the fly!
 			</h1>
 		</div>
 	</div>
-	<%= form_for @prelauncher do |f| %>
-	<h1 id="name">
-		<%= f.label :email %><br>
-		<%= f.text_field :email %><div id="slogan" style = "display:inline-block">@stanford.edu</div>
-	</h1>
-	<h1 id="name" >
-		<%= f.submit 'Keep me updated!', class: "button"%>
-	</h1>
-	<% end %>
+	<div class="row">
+		<div class="col-md-8 col-md-offset-3">
+		<%= form_for @prelauncher do |f| %>
+		<h1 id="slogan">
+			<%= f.text_field :email, id: "text-box" %> @stanford.edu
+		</h1>
+			<%= f.submit 'Keep me updated!', class: "button"%>
+		<% end %>
+		</div>
+	</div>
 </div>
